@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bikash Sahu — Video Editor Portfolio</title>
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- =========================
+       Background canvas (ripple)
+       ========================= -->
+  <canvas id="rippleCanvas" aria-hidden="true"></canvas>
+
+  <!-- =========================
+       Page container
+       ========================= -->
+  <div class="site">
+
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo"><h1>VE</h1></div>
+        <div class="title-wrap">
+          <h2>Bikash Sahu / Creative Video Editor</h2>
+          <p>Story in motion — cinematic edits & color grading</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#videos">Videos</a>
+        <a href="#photos">Photos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero-left">
+        <h1>Premium Video Portfolio</h1>
+        <p>Click any video or photo to expand it to the center. Click outside or press Esc to close.</p>
+      </div>
+      <div class="hero-right">
+        <div class="badge">
+          <div class="badge-title">Featured</div>
+          <div class="badge-sub">Cinematic Color Grade</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Videos Section ===== -->
+    <section id="videos" class="works-section" aria-label="Video works">
+      <h2 class="section-title">🎬 Video Works </h2>
+
+      <div class="gallery" id="video-gallery">
+        <!-- Keep your exact file paths as provided (do not change). -->
+        <!-- Video 1 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\ILUUSH_BTS(1).mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
+          </div>
+          <div class="meta"><h3>Vertical Film — 9:16</h3><p>Commercial edit • 00:45</p></div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\Mangatrai_003.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="meta"><h3>Square Cut — 9:16</h3><p>Social promo • 00:30</p></div>
+        </article>
+
+        <!-- Video 3 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\Rohik_01.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="meta"><h3>Short Film — 9:16</h3><p>Teaser • 01:12</p></div>
+        </article>
+
+        <!-- Video 4 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\IMG_6125.MP4" type="video/mp4">
+            </video>
+          </div>
+          <div class="meta"><h3>Story Cut — 9:16</h3><p>Social post • 00:30</p></div>
+        </article>
+
+        <!-- Video 5 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\Anand_002_Edited.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="meta"><h3>Vertical Edit — 9:16</h3><p>Story • 00:45</p></div>
+        </article>
+
+        <!-- Video 6 -->
+        <article class="card" data-type="video">
+          <div class="media aspect-9-16">
+            <video controls preload="metadata">
+              <source src="F:\Visual studio\Photos Videos\Trendz_Final_03.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="meta"><h3>Brand Story — 9:16</h3><p>Commercial • 01:00</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Photos Section ===== -->
+    <section id="photos" class="works-section" aria-label="Photo works">
+      <h2 class="section-title">📸 Photo Works </h2>
+
+      <div class="gallery" id="photo-gallery">
+        <!-- Photo 1 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\04.jpg" alt="Still Frame 1">
+          </div>
+          <div class="meta"><h3>Still Frame</h3><p>Graded capture</p></div>
+        </article>
+
+        <!-- Photo 2 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\DSC03546.jpg" alt="Portrait 1">
+          </div>
+          <div class="meta"><h3>Portrait</h3><p>Color study</p></div>
+        </article>
+
+        <!-- Photo 3 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\DSC09897.jpg" alt="Location Still 1">
+          </div>
+          <div class="meta"><h3>Location Still</h3><p>Atmospheric</p></div>
+        </article>
+
+        <!-- Photo 4 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\BESTA NEW POSTINGS.png" alt="Portrait 2">
+          </div>
+          <div class="meta"><h3>Portrait Shot</h3><p>Fashion grade</p></div>
+        </article>
+
+        <!-- Photo 5 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\Gifting.png" alt="Mood Capture">
+          </div>
+          <div class="meta"><h3>Vertical Still</h3><p>Mood capture</p></div>
+        </article>
+
+        <!-- Photo 6 -->
+        <article class="card" data-type="photo">
+          <div class="media aspect-4-5">
+            <img src="F:\Visual studio\Photos Videos\Blue White Playful About Me Personal Instagram Post (1).png" alt="Editorial">
+          </div>
+          <div class="meta"><h3>Editorial</h3><p>Brand story</p></div>
+        </article>
+      </div>
+    </section>
+
+    
+
+    <!-- ===== Contact / Footer ===== -->
+    <!-- <footer id="contact" class="site-footer">
+      <div class="footer-content">
+        <strong>Let's collaborate</strong>
+        <div class="contact-info">email: <a href="mailto:bikashsahu79100@gmail.com">bikashsahu79100@gmail.com</a> • +91 7205811196</div>
+      </div>
+      <div class="socials"><span>YT</span><span>IG</span><span>IN</span></div>
+    </footer> -->
+
+    <footer id="contact" class="site-footer">
+  <div class="footer-content">
+    <h2>Let's Collaborate</h2>
+    <p class="contact-info">
+  <span class="label">Email:</span>
+  <a href="mailto:bikashsahu79100@gmail.com">bikashsahu79100@gmail.com</a><br>
+  <span class="label">Phone:</span>
+  <a href="tel:+917205811196">+91 7205811196</a>
+</p>
+
+    <div class="socials">
+      <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bikash-sahu-4219b72bb/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Add this line inside your <head> section for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  </div> <!-- /.site -->
+
+  <!-- ===== Lightbox (full-screen center display) ===== -->
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightbox-panel" role="dialog" aria-modal="true">
+      <div class="lightbox-inner" id="lightbox-inner" tabindex="-1">
+        <!-- content injected by JS: <video> or <img> will go here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to external script -->
+  <script src="script1.js"></script>
+</body>
+</html>
