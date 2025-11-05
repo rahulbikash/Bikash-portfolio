@@ -79,7 +79,6 @@ body {
   text-shadow: 0 10px 30px rgba(2,10,30,0.6);
 }
 .hero p { opacity:0.9; margin-top:8px; }
-
 /* badge on right */
 .badge {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -111,6 +110,36 @@ body {
   cursor: pointer;
 }
 .card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 18px 60px rgba(0,0,0,0.6); }
+
+/* Software Section */
+.software-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.software-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.scroll-track img {
+  height: 80px;
+  width: auto;
+  transition: transform 0.3s;
+  filter: brightness(1);
+}
+
+.scroll-track img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 4px #ffffff);
+}
+
+@keyframes scrollIcons {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 /* Media area keeps aspect ratio */
 .media { position:relative; width:100%; overflow:hidden; border-radius:12px; background:#000; }
